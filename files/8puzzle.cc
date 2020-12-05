@@ -272,7 +272,7 @@ namespace AMA {
     Node* min_node_pq;
     Node* min_node_pq_twin;
     Node* temp;
-    //
+    
     //std::cout << "temp address = " << temp <<'\n';
     min_node_pq = pq.top();
     //std::cout << "min_node_pq address = " << min_node_pq << '\n';
