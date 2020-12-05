@@ -6,6 +6,9 @@
 #include <ctime>
 #include <queue>
 #include <chrono>
+#include <fstream>
+#include <filesystem>
+#include <cstdio>
 using std::vector;
 
 namespace AMA {
@@ -287,10 +290,12 @@ namespace AMA {
         //std::cout << "temp address orig = " << temp <<'\n';
         if (min_node_pq->previous == nullptr) {
           pq.push(temp);
+          //delete temp;
         } else{
 					if(!temp->node_bd.equals(min_node_pq->previous->node_bd)){
             //std::cout << "orig" << '\n';
 						pq.push(temp);
+            //delete temp;
 					}
 				}
       }
@@ -362,13 +367,15 @@ private:
 
 int main(int argc, char* argv[]) {
   //std::cout << "Allaahu Akbarr!!" << '\n';
+  std::ifstream in(argv[1]);
   int n;
-  std::cin >> n;
+
+  in >> n;
   vector<vector<int>> tile(n);
   int m;
   for (size_t i = 0; i < n; i++) {
     for (size_t j = 0; j < n; j++) {
-      std::cin >> m;
+      in >> m;
       tile[i].push_back(m);
     }
   }
