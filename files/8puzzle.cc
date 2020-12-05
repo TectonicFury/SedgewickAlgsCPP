@@ -272,6 +272,7 @@ namespace AMA {
     Node* min_node_pq;
     Node* min_node_pq_twin;
     Node* temp;
+    //
     //std::cout << "temp address = " << temp <<'\n';
     min_node_pq = pq.top();
     //std::cout << "min_node_pq address = " << min_node_pq << '\n';
@@ -384,7 +385,7 @@ int main(int argc, char* argv[]) {
   //std::cout << "original board = " << '\n';
   //std::cout << b << '\n';
   const auto start = std::chrono::steady_clock::now();
-  
+
   AMA::Solver slvr(b);
 
   const auto end = std::chrono::steady_clock::now();
