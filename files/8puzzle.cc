@@ -384,7 +384,7 @@ int main(int argc, char* argv[]) {
   //std::cout << "original board = " << '\n';
   //std::cout << b << '\n';
   const auto start = std::chrono::steady_clock::now();
-
+  
   AMA::Solver slvr(b);
 
   const auto end = std::chrono::steady_clock::now();
