@@ -11,7 +11,7 @@
 #include <cstdio>
 using std::vector;
 //need to learn about allocators and memory management in general since "new" operator is inefficient
-// 🙂
+
 namespace AMA {
 
   class Board {
