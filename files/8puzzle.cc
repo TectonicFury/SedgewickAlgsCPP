@@ -10,6 +10,7 @@
 #include <filesystem>
 #include <cstdio>
 using std::vector;
+//need to learn about allocators and memory management in general since "new" operator is inefficient
 
 namespace AMA {
 
@@ -272,6 +273,7 @@ namespace AMA {
     Node* min_node_pq;
     Node* min_node_pq_twin;
     Node* temp;
+
     //std::cout << "temp address = " << temp <<'\n';
     min_node_pq = pq.top();
     //std::cout << "min_node_pq address = " << min_node_pq << '\n';
@@ -402,6 +404,5 @@ int main(int argc, char* argv[]) {
   }
 
   std::cout << slvr.numMoves() << '\n';
-
 
 }
