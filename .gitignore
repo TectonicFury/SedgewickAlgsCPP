@@ -6,7 +6,6 @@
 *.lo
 *.o
 *.obj
-*~
 
 # Precompiled Headers
 *.gch
@@ -33,3 +32,4 @@
 *.app
 **/.DS_Store
 [^\.]*
+~*
